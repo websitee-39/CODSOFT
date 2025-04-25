@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monika Chatur | Portfolio</title>
+  <style>
+    :root {
+      --primary:#6c63ff;--bg:#f0f4f8;--text:#333;--light:#fff;
+      --shadow:0 8px 24px rgba(0,0,0,0.1);--radius:12px;--transition:.3s ease-in-out;
+    }
+    body{margin:0;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);}
+    .container{max-width:1100px;margin:auto;padding:0 20px;}
+
+    .hero {
+      background:linear-gradient(to right,#6c63ff,#8e7bff);color:#fff;
+      min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 20px;
+    }
+    .hero-text h1{font-size:3rem;margin-bottom:10px;}
+    .hero-text span{color:#ffc600;}
+    .btn{background:#fff;color:var(--primary);padding:12px 24px;border-radius:var(--radius);text-decoration:none;
+      font-weight:bold;box-shadow:var(--shadow);transition:var(--transition);display:inline-block;margin-top:20px;}
+    .btn:hover{background:#ffc600;color:#333;}
+
+    .section{padding:60px 0;}
+    .about-flex{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:40px;}
+    .about-text{flex:1 1 55%;}
+    .about-img{flex:1 1 35%;max-width:300px;}
+    .about-img img{width:100%;border-radius:50%;box-shadow:var(--shadow);}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;}
+    .skills-grid span{background:var(--light);padding:10px 20px;border-radius:var(--radius);box-shadow:var(--shadow);
+      font-weight:500;}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+    .card{background:var(--light);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+      transition:var(--transition);}
+    .card:hover{transform:translateY(-8px);}
+    .card img{width:100%;height:180px;object-fit:cover;}
+    .card-content{padding:20px;}
+    .resume{text-align:center;}
+    .resume a{display:inline-block;margin-top:20px;text-decoration:none;color:#fff;background:var(--primary);
+      padding:10px 20px;border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition);}
+    .resume a:hover{background:#ffc600;color:#333;}
+    #contact{text-align:center;}
+    .contact-form{max-width:600px;margin:0 auto;text-align:left;}
+    .form-group{margin-bottom:20px;}
+    .form-group label{display:block;margin-bottom:5px;}
+    .form-group input,.form-group textarea{width:100%;padding:10px;border-radius:var(--radius);border:1px solid #ccc;
+      font-size:1rem;}
+    .form-group textarea{resize:vertical;height:120px;}
+    button[type="submit"]{background:var(--primary);color:#fff;padding:10px 20px;border:none;border-radius:var(--radius);
+      cursor:pointer;transition:var(--transition);}
+    button[type="submit"]:hover{background:#ffc600;color:#333;}
+    footer{text-align:center;padding:20px;background:#e8eaf6;font-size:.9rem;color:#555;}
+
+    .top-nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--primary);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  display: flex;
+  gap: 15px;
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffc600;
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+ 
+  <div class="top-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+ 
+  <section class="hero" id="home">
+    <div class="container hero-flex">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Monika Chatur</span></h1>
+        <h3>Frontend Developer & Web Designer</h3>
+        <p>MSC Computer Science Student of K.K.Wagh Arts, Commerce, Science and Computer Science college, Nashik.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="about" class="section">
+    <div class="container about-flex">
+      <div class="about-img">
+        <img src="p.jpeg" alt="Monika Chatur">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science student at KKW Arts, Commerce, Science and Computer Science college, Nashik passionate about Web Development, AI, skilled in Python and Java, Android Development, and solving real-world problems through technology.</p>
+        <p>I design and build clean, responsive websites. I love solving problems with elegant code and creating seamless user experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Android-Development</span><span>Git & GitHub</span>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="card">
+          <img src="istockphoto-1292991881-612x612.webp" alt="Project 1">
+          <div class="card-content">
+            <h3>Project One</h3>
+            <p>Landing page using modern CSS animations and layout techniques.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Project 2">
+          <div class="card-content">
+            <h3>Project Two</h3>
+            <p>Weather app using OpenWeather API and responsive UI design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="resume" class="section resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>Download my resume for more information about my education and experience.</p>
+      <a href="your-resume-link.pdf" target="_blank">Download Resume</a>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: monikachatur342@gmail.com</p>
+      <p>Phone: 9699066835</p>
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>&copy; 2025 MyPortfolio | All rights reserved.</p>
+  </footer>
+</body>
+</html>
